@@ -1,0 +1,26 @@
+body {
+    background: #FBFAFA;
+    color: #333333;
+    margin: 0;
+}
+
+#head-content {
+    background-color: #F0F0F0;
+    border-bottom: solid #e2e2e2 2px;
+}
+
+#main-content {
+    font-size: 18px;
+}
+
+
+.dates li{
+    float: left;
+    width: 5.5%;
+}
+
+.habits li{
+    float: left;
+    overflow: hidden;
+    width: 33%;
+}
