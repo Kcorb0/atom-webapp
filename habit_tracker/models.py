@@ -10,17 +10,6 @@ class DailyTracking(models.Model):
     day5 = models.BooleanField(default=False)
     day6 = models.BooleanField(default=False)
     day7 = models.BooleanField(default=False)
-    day8 = models.BooleanField(default=False)
-    day9 = models.BooleanField(default=False)
-    day10 = models.BooleanField(default=False)
-    day11 = models.BooleanField(default=False)
-    day12 = models.BooleanField(default=False)
-    day13 = models.BooleanField(default=False)
-    day14 = models.BooleanField(default=False)
-    day15 = models.BooleanField(default=False)
-    day16 = models.BooleanField(default=False)
-    day17 = models.BooleanField(default=False)
-    day18 = models.BooleanField(default=False)
 
 
 class Habit(models.Model):

@@ -9,18 +9,28 @@ body {
     border-bottom: solid #e2e2e2 2px;
 }
 
-#main-content {
-    font-size: 18px;
+.navbar-brand {
+    padding-left: 10px;
 }
 
+#main-content {
+    font-size: 16px;
+}
 
-.dates li{
+.dates li {
     float: left;
     width: 5.5%;
 }
 
-.habits li{
+.habits li {
     float: left;
     overflow: hidden;
     width: 33%;
+}
+
+.col-sm-1 {
+    float: left;
+    min-height: 1px;
+    padding-right: 1px;
+    padding-left: 1px;
 }

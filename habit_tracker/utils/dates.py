@@ -13,4 +13,4 @@ def datelist(n):
 
 
 if __name__ == "__main__":
-    print(datelist(18))
+    print(datelist(7))

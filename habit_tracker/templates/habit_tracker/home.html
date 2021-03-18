@@ -1,17 +1,38 @@
-
-
 {% extends "habit_tracker/base.html"%}
 {% block content %}
-    <ul class="dates" style="list-style-type: None; padding: 0;">
-    {% for date in dates_list %}
-        <li><p>{{ date }}</p></li>
-    {% endfor %}
-    </ul>
-    {% for habit in habits %}
-        <ul class="habits" style="list-style-type: None; padding: 0;">
-            <li><p>{{ habit.title }}</p></li>
-            <li><p>Category: {{ habit.category }}</p></li>
-            <li><p>Created: {{ habit.creation_date }}</p></li>
-        </ul>
-    {% endfor %}
+
+<div class="row">
+    <div class="col-sm">
+        <p>Created</p>
+    </div>
+    <div class="col-sm">
+        <p>Title</p>
+    </div>
+    <div class="col-sm">
+        <p>Category</p>
+    </div>
+    <div class="col-sm">
+        {% for date in dates_list %}
+        <div class="col-sm-1">{{ date }}</div>
+        {% endfor %}
+    </div>
+</div>
+
+{% for habit in habits %}
+<div class="row">
+    <div class="col-sm">
+        <p>Created: {{ habit.creation_date }}</p>
+    </div>
+    <div class="col-sm">
+        <p>{{ habit.title }}</p>
+    </div>
+    <div class="col-sm">
+        <p>Category: {{ habit.category }}</p>
+    </div>
+    <div class="col-sm">
+        <p></p>
+    </div>
+</div>
+{% endfor %}
+
 {% endblock content %}
