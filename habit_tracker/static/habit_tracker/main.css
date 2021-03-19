@@ -1,6 +1,6 @@
 body {
     background: #FBFAFA;
-    color: #333333;
+    color: #2E2E2E !important;
     margin: 0;
 }
 
@@ -15,6 +15,16 @@ body {
 
 #main-content {
     font-size: 16px;
+    padding-top: 20px;
+}
+
+#main-content p {
+    margin: 0;
+}
+
+#col-sorting {
+    background-color: #dadada;
+    border-bottom: solid #999999 2px;
 }
 
 .dates li {
@@ -31,6 +41,4 @@ body {
 .col-sm-1 {
     float: left;
     min-height: 1px;
-    padding-right: 1px;
-    padding-left: 1px;
 }

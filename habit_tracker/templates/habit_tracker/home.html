@@ -1,15 +1,15 @@
 {% extends "habit_tracker/base.html"%}
 {% block content %}
 
-<div class="row">
-    <div class="col-sm">
+<div id="col-sorting" class="row">
+    <div class="col-1">
         <p>Created</p>
     </div>
-    <div class="col-sm">
-        <p>Title</p>
-    </div>
-    <div class="col-sm">
+    <div class="col-2">
         <p>Category</p>
+    </div>
+    <div class="col-3">
+        <p>Title</p>
     </div>
     <div class="col-sm">
         {% for date in dates_list %}
@@ -20,14 +20,14 @@
 
 {% for habit in habits %}
 <div class="row">
-    <div class="col-sm">
-        <p>Created: {{ habit.creation_date }}</p>
+    <div class="col-1">
+        <p>{{ habit.creation_date }}</p>
     </div>
-    <div class="col-sm">
+    <div class="col-2">
+        <p>{{ habit.category }}</p>
+    </div>
+    <div class="col-3">
         <p>{{ habit.title }}</p>
-    </div>
-    <div class="col-sm">
-        <p>Category: {{ habit.category }}</p>
     </div>
     <div class="col-sm">
         <p></p>

@@ -29,7 +29,7 @@ def home(request):
     context = {
         'title': 'Home',
         'habits': habits_example,
-        'dates_list': datelist(7)
+        'dates_list': datelist(10)
     }
     return render(request, 'habit_tracker/home.html', context)
 
